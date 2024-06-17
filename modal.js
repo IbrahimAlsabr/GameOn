@@ -107,7 +107,7 @@ function validate() {
     // Validate terms and conditions
     if (!terms) {
         showError(
-            "checkbox1",
+            "checkbox2",
             "Vous devez vérifier que vous acceptez les termes et conditions."
         );
         isValid = false;

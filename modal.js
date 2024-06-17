@@ -86,7 +86,7 @@ function validate() {
     }
 
     // Validate quantity
-    if (isNaN(quantity) || quantity < 0 || quantity > 99) {
+    if (isNaN(quantity) || parseInt(quantity) < 0 || parseInt(quantity) > 99 || quantity.length === 0) {
         showError("quantity", "Veuillez entrer un nombre valide de concours.");
         isValid = false;
     }
